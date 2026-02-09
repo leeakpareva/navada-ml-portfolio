@@ -87,7 +87,7 @@ export function SidebarNav({
               setIsMenuOpen(!isMenuOpen)
             }
           }}
-          className="fixed left-4 top-4 z-50 flex h-12 w-12 items-center justify-center rounded border border-[#444] transition-all duration-200 hover:border-[#666]"
+          className="fixed right-4 top-1/2 z-50 flex h-12 w-12 items-center justify-center rounded border border-[#444] transition-all duration-200 hover:border-[#666] -translate-y-1/2 lg:left-4 lg:top-4 lg:translate-y-0"
           style={{ background: "#050505" }}
           aria-label={isHidden ? "Show sidebar" : "Toggle menu"}
         >

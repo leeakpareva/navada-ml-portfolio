@@ -23,10 +23,18 @@ export function HomeSection() {
           </h1>
 
           <p
-            className="mb-10 font-serif text-[22px] font-light italic"
+            className="mb-4 font-serif text-[22px] font-light italic"
             style={{ color: "#888" }}
           >
-            Cloud GPU Computing for AI/ML Workloads on Paperspace
+            Research Infrastructure for Enterprise AI Development
+          </p>
+          <p
+            className="mb-10 text-[14px] leading-relaxed"
+            style={{ color: "#666" }}
+          >
+            Active deployment environment for production AI systems, autonomous agents, and ML model training.
+            This infrastructure powers my consulting work across financial services, developing multi-agent
+            architectures and RAG pipelines for enterprise clients.
           </p>
 
           {/* Specs table */}
@@ -63,19 +71,28 @@ export function HomeSection() {
             </div>
           </div>
 
-          {/* Paperspace Link */}
+          {/* Research Platform */}
           <div className="mt-8 mb-8">
-            <a
-              href="https://docs.digitalocean.com/products/paperspace/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded border border-[#333] bg-[#111] px-4 py-2 transition-all hover:border-[#555] hover:bg-[#1a1a1a]"
-            >
-              <span className="font-mono text-[11px] uppercase" style={{ color: "#888", letterSpacing: "0.15em" }}>
-                Running on Paperspace Gradient
-              </span>
-              <span style={{ color: "#666" }}>→</span>
-            </a>
+            <div className="rounded border border-[#333] bg-[#111] p-4 max-w-md">
+              <p className="mb-2 font-mono text-[10px] uppercase" style={{ color: "#666", letterSpacing: "0.15em" }}>
+                Current Research Platform
+              </p>
+              <p className="text-[12px]" style={{ color: "#888" }}>
+                Utilizing Paperspace Gradient for scalable compute infrastructure.
+                This environment supports continuous experimentation with LLMs,
+                computer vision models, and multi-agent systems for client deployments.
+              </p>
+              <a
+                href="https://docs.digitalocean.com/products/paperspace/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 mt-3 text-[11px] transition-colors hover:text-white"
+                style={{ color: "#666" }}
+              >
+                <span>Platform documentation</span>
+                <span>→</span>
+              </a>
+            </div>
           </div>
 
           {/* Quick stats */}
@@ -120,12 +137,12 @@ export function HomeSection() {
             className="font-mono text-[10px] uppercase"
             style={{ color: "#555", letterSpacing: "0.2em" }}
           >
-            Status
+            Lab Status
           </span>
           <span className="flex items-center gap-2">
-            <span style={{ color: "#e0e0e0" }}>{"◉"}</span>
+            <span style={{ color: "#4ade80" }}>{"◉"}</span>
             <span className="font-mono text-[11px]" style={{ color: "#e0e0e0" }}>
-              Online
+              Active Research
             </span>
           </span>
           <span className="h-3 w-px" style={{ background: "#222" }} />
@@ -133,20 +150,20 @@ export function HomeSection() {
             className="font-mono text-[10px] uppercase"
             style={{ color: "#555", letterSpacing: "0.2em" }}
           >
-            Platform
+            Current Projects
           </span>
           <span className="font-mono text-[11px]" style={{ color: "#888" }}>
-            Paperspace Gradient
+            3 Client Deployments / 2 Research Papers
           </span>
           <span className="h-3 w-px" style={{ background: "#222" }} />
           <span
             className="font-mono text-[10px] uppercase"
             style={{ color: "#555", letterSpacing: "0.2em" }}
           >
-            Stack
+            Focus Areas
           </span>
           <span className="font-mono text-[11px]" style={{ color: "#888" }}>
-            Python 3.11 / PyTorch 2.1 / Node v20
+            Multi-Agent Systems / RAG Architecture / LLM Fine-tuning
           </span>
         </div>
       </div>

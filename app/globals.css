@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 2%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 88%;
+    --muted: 0 0% 8%;
+    --muted-foreground: 0 0% 53%;
+    --accent: 0 0% 10%;
+    --accent-foreground: 0 0% 88%;
+    --destructive: 0 0% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 10%;
+    --input: 0 0% 10%;
+    --ring: 0 0% 100%;
+    --radius: 0rem;
+    --sidebar-background: 0 0% 2%;
+    --sidebar-foreground: 0 0% 88%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 2%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-foreground: 0 0% 88%;
+    --sidebar-border: 0 0% 10%;
+    --sidebar-ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom selection */
+::selection {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+/* Pulsing animation for cover page */
+@keyframes pulse-text {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+@keyframes line-expand {
+  from { width: 0; }
+  to { width: 120px; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-pulse-text {
+  animation: pulse-text 2s ease-in-out infinite;
+}
+
+.animate-line-expand {
+  animation: line-expand 1.5s ease-out 0.5s forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}

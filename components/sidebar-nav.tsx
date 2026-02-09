@@ -64,7 +64,7 @@ export function SidebarNav({
           className="font-mono text-[10px] uppercase"
           style={{ color: "#888", letterSpacing: "0.25em" }}
         >
-          NAVADA
+          NAVADA-LAB
         </span>
       </div>
 

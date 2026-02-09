@@ -41,7 +41,7 @@ export function ProfileSection() {
               Principal Azure AI Solution Consultant at Generali UK
             </p>
             <p className="font-mono text-[11px]" style={{ color: "#666" }}>
-              Mobile: 07935237704 | Email: leeakpareva@hotmail.com
+              Mobile: 07935237704 | Email: lee@navada.info
             </p>
           </div>
 

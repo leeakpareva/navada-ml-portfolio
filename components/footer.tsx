@@ -16,7 +16,7 @@ export function Footer() {
           {/* Center - Copyright */}
           <div className="text-center">
             <p className="font-mono text-[10px]" style={{ color: "#555" }}>
-              © 2024 NAVADA ML. All rights reserved.
+              © 2024 Navada-Lab. All rights reserved. | navada-lab.space
             </p>
           </div>
 

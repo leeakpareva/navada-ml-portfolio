@@ -18,8 +18,8 @@ const ibmPlexMono = IBM_Plex_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'NAVADA Lab',
-  description: 'AI Research & Development Laboratory — Infrastructure, Models, Agents',
+  title: 'Navada-Lab | AI Research & Development Platform',
+  description: 'Leslie Akpareva - AI Engineer & Technology Director. Cloud GPU Computing with NVIDIA RTX A4000 on Paperspace. navada-lab.space',
 }
 
 export const viewport: Viewport = {

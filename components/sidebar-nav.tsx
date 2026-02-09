@@ -28,6 +28,7 @@ const NAV_SECTIONS: NavSection[] = [
   { id: "technical", label: "TECHNICAL" },
   { id: "roadmap", label: "ROADMAP" },
   { id: "support", label: "SUPPORT" },
+  { id: "faq", label: "FAQ" },
 ]
 
 export function SidebarNav({

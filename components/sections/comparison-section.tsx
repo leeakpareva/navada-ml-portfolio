@@ -44,7 +44,7 @@ export function ComparisonSection() {
               <h2 className="font-serif text-[28px] font-light" style={{ color: "#e0e0e0" }}>
                 Cloud GPU
               </h2>
-              <Badge className="border-[#444] bg-gradient-to-r from-[#0066ff] to-[#00d4ff] text-white">
+              <Badge className="border-[#555] bg-[#222] text-[#888]">
                 Recommended
               </Badge>
             </div>

@@ -13,6 +13,7 @@ import { ProjectsSection } from "@/components/sections/projects-section"
 import { TechnicalSection } from "@/components/sections/technical-section"
 import { RoadmapSection } from "@/components/sections/roadmap-section"
 import { SupportSection } from "@/components/sections/support-section"
+import { FAQSection } from "@/components/sections/faq-section"
 
 export default function Page() {
   const [entered, setEntered] = useState(false)
@@ -140,6 +141,12 @@ export default function Page() {
 
             <div ref={setSectionRef("support")} data-section="support">
               <SupportSection />
+            </div>
+
+            <div className="h-px w-full" style={{ background: "#1a1a1a" }} />
+
+            <div ref={setSectionRef("faq")} data-section="faq">
+              <FAQSection />
             </div>
 
             {/* Bottom spacing */}

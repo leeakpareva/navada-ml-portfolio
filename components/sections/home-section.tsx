@@ -26,7 +26,7 @@ export function HomeSection() {
             className="mb-10 font-serif text-[22px] font-light italic"
             style={{ color: "#888" }}
           >
-            Sleek Design. Powerful Performance.
+            Cloud GPU Computing for AI/ML Workloads on Paperspace
           </p>
 
           {/* Specs table */}
@@ -63,8 +63,23 @@ export function HomeSection() {
             </div>
           </div>
 
+          {/* Paperspace Link */}
+          <div className="mt-8 mb-8">
+            <a
+              href="https://docs.digitalocean.com/products/paperspace/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded border border-[#333] bg-[#111] px-4 py-2 transition-all hover:border-[#555] hover:bg-[#1a1a1a]"
+            >
+              <span className="font-mono text-[11px] uppercase" style={{ color: "#888", letterSpacing: "0.15em" }}>
+                Running on Paperspace Gradient
+              </span>
+              <span style={{ color: "#666" }}>→</span>
+            </a>
+          </div>
+
           {/* Quick stats */}
-          <div className="mt-10 flex gap-10">
+          <div className="flex gap-10">
             {[
               { label: "VRAM", value: "16 GB" },
               { label: "CUDA", value: "12.1" },

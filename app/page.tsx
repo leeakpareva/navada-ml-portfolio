@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer"
 import { HomeSection } from "@/components/sections/home-section"
 import { ProfileSection } from "@/components/sections/profile-section"
 import { CoreTextSection } from "@/components/sections/coretext-section"
+import { ComparisonSection } from "@/components/sections/comparison-section"
 import { InfrastructureSection } from "@/components/sections/infrastructure-section"
 import { ProjectsSection } from "@/components/sections/projects-section"
 import { TechnicalSection } from "@/components/sections/technical-section"
@@ -103,6 +104,12 @@ export default function Page() {
 
             <div ref={setSectionRef("coretext")} data-section="coretext">
               <CoreTextSection />
+            </div>
+
+            <div className="h-px w-full" style={{ background: "#1a1a1a" }} />
+
+            <div ref={setSectionRef("comparison")} data-section="comparison">
+              <ComparisonSection />
             </div>
 
             <div className="h-px w-full" style={{ background: "#1a1a1a" }} />

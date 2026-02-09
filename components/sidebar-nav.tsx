@@ -12,6 +12,7 @@ const NAV_SECTIONS: NavSection[] = [
   { id: "home", label: "HOME" },
   { id: "profile", label: "PROFILE" },
   { id: "coretext", label: "CORETEXT AI" },
+  { id: "comparison", label: "GPU COMPARISON" },
   { id: "infrastructure", label: "INFRASTRUCTURE" },
   {
     id: "projects",

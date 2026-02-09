@@ -19,6 +19,7 @@ export default function Page() {
   const [entered, setEntered] = useState(false)
   const [activeSection, setActiveSection] = useState("home")
   const [activeProject, setActiveProject] = useState<string | undefined>()
+  const [sidebarHidden, setSidebarHidden] = useState(false)
   const contentRef = useRef<HTMLDivElement>(null)
 
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({})
@@ -83,12 +84,18 @@ export default function Page() {
   return (
     <div className="flex min-h-screen flex-col" style={{ background: "#050505" }}>
       <div className="flex flex-1">
-        <SidebarNav activeSection={activeSection} onNavigate={handleNavigate} />
+        <SidebarNav
+          activeSection={activeSection}
+          onNavigate={handleNavigate}
+          onSidebarToggle={setSidebarHidden}
+        />
 
         {/* Main content */}
         <main
           ref={contentRef}
-          className="ml-[180px] flex-1 overflow-y-auto px-12 lg:px-16"
+          className={`flex-1 overflow-y-auto px-4 sm:px-8 md:px-12 lg:px-16 transition-all duration-300 ${
+            sidebarHidden ? "ml-0" : "ml-0 lg:ml-[180px]"
+          }`}
         >
           <div className="mx-auto max-w-4xl">
             <div ref={setSectionRef("home")} data-section="home">

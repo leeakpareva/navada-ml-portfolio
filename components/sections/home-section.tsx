@@ -4,9 +4,9 @@ export function HomeSection() {
   return (
     <section className="min-h-screen">
       {/* Hero area */}
-      <div className="relative flex min-h-[80vh] items-center">
+      <div className="relative flex min-h-[80vh] items-center flex-col lg:flex-row">
         {/* Content */}
-        <div className="relative z-10 flex-1 pr-8">
+        <div className="relative z-10 flex-1 pr-4 lg:pr-8">
           {/* Label */}
           <p
             className="mb-6 font-mono text-[10px] uppercase"
@@ -16,14 +16,14 @@ export function HomeSection() {
           </p>
 
           <h1
-            className="mb-4 font-serif text-[56px] font-light leading-[1.05]"
+            className="mb-4 font-serif text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] font-light leading-[1.05]"
             style={{ color: "#fff", letterSpacing: "-0.02em" }}
           >
             <span className="text-balance">NVIDIA RTX A4000</span>
           </h1>
 
           <p
-            className="mb-4 font-serif text-[22px] font-light italic"
+            className="mb-4 font-serif text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] font-light italic"
             style={{ color: "#888" }}
           >
             Research Infrastructure for Enterprise AI Development
@@ -118,7 +118,7 @@ export function HomeSection() {
         </div>
 
         {/* GPU Image — right side */}
-        <div className="relative hidden w-[420px] flex-shrink-0 lg:block">
+        <div className="relative w-full max-w-[300px] flex-shrink-0 mt-8 lg:mt-0 lg:w-[420px] lg:block">
           <Image
             src="/images/A4000.png"
             alt="NVIDIA RTX A4000 GPU"

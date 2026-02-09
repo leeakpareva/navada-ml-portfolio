@@ -1,7 +1,7 @@
 export function Footer() {
   return (
-    <footer className="border-t border-[#1a1a1a] bg-[#050505] ml-[180px]">
-      <div className="mx-auto max-w-7xl px-12 py-8 lg:px-16">
+    <footer className="border-t border-[#1a1a1a] bg-[#050505] ml-0 lg:ml-[180px]">
+      <div className="mx-auto max-w-7xl px-4 sm:px-8 md:px-12 py-8 lg:px-16">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           {/* Left side - Name and title */}
           <div className="text-center md:text-left">

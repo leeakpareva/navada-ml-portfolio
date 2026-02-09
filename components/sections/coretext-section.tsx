@@ -30,15 +30,15 @@ export function CoreTextSection() {
             Why This Project Exists
           </h2>
           <p className="mb-6 text-[16px] font-medium leading-relaxed" style={{ color: "#e0e0e0" }}>
-            Books are full of knowledge, but most of that knowledge stays trapped inside static pages.
+            Text-based knowledge is full of valuable information, but most of that knowledge stays trapped inside static documents.
           </p>
 
           <h3 className="mb-4 font-serif text-[20px] font-light" style={{ color: "#e0e0e0" }}>
             The Core Problem CoreText AI Solves
           </h3>
           <p className="mb-4 text-[14px] leading-relaxed" style={{ color: "#b0b0b0" }}>
-            Huge amounts of high-quality, carefully structured, expert-written knowledge remains locked in physical or PDF books:
-            textbooks, technical monographs, reference works, course readers, and classic domain-specific literature.
+            Huge amounts of high-quality, carefully structured, expert-written knowledge remains locked in static text documents:
+            business manuals, research papers, technical documentation, training materials, legal documents, educational content, and specialized literature for both businesses and individuals.
           </p>
           <p className="mb-6 text-[14px] leading-relaxed" style={{ color: "#b0b0b0" }}>
             This knowledge is extremely reliable (peer-reviewed, edited, authoritative), deeply structured,
@@ -63,17 +63,17 @@ export function CoreTextSection() {
           </h3>
           <p className="mb-6 text-[15px] font-medium leading-relaxed" style={{ color: "#e0e0e0" }}>
             The highest-leverage place to apply modern AI is not on the open web — it is on the
-            highest-quality closed-domain knowledge that already exists in books.
+            highest-quality closed-domain knowledge that already exists in structured text documents.
           </p>
           <p className="mb-6 text-[14px] leading-relaxed" style={{ color: "#b0b0b0" }}>
             Instead of letting another 10,000 mediocre blog posts get turned into yet another general chatbot,
-            we should take the very best 1,000 textbooks and turn each one into a living, reasoning,
-            interactive expert that stays 100% faithful to the original text.
+            we should take specialized text content—whether academic, business, or personal—and turn each document
+            into a living, reasoning, interactive expert that stays 100% faithful to the original content.
           </p>
 
           <div className="mb-6 border-l-2 border-[#444] pl-6">
             <p className="text-[16px] font-medium" style={{ color: "#e0e0e0" }}>
-              Turn every great book into its own specialized, citation-grounded AI engine.
+              Turn any text document into its own specialized, citation-grounded AI engine.
             </p>
           </div>
 
@@ -90,16 +90,16 @@ export function CoreTextSection() {
             What CoreText AI Actually Does
           </h2>
           <p className="mb-6 text-[15px] leading-relaxed" style={{ color: "#b0b0b0" }}>
-            It converts a static textbook into a dynamic, queryable, infinitely patient domain expert that:
+            It converts any static text document into a dynamic, queryable, infinitely patient domain expert that:
           </p>
           <ul className="space-y-3 text-[14px]" style={{ color: "#999" }}>
             <li className="flex items-start gap-2">
               <span style={{ color: "#666" }}>▸</span>
-              <span>Answers only from the book</span>
+              <span>Answers only from the source document</span>
             </li>
             <li className="flex items-start gap-2">
               <span style={{ color: "#666" }}>▸</span>
-              <span>Cites exact pages and sections</span>
+              <span>Cites exact sections and references</span>
             </li>
             <li className="flex items-start gap-2">
               <span style={{ color: "#666" }}>▸</span>
@@ -111,7 +111,7 @@ export function CoreTextSection() {
             </li>
             <li className="flex items-start gap-2">
               <span style={{ color: "#666" }}>▸</span>
-              <span>Gives every learner their own private tutor version of that book — 24/7</span>
+              <span>Provides personalized access to any text content — 24/7</span>
             </li>
           </ul>
         </CardContent>
@@ -381,23 +381,51 @@ export function CoreTextSection() {
         </CardContent>
       </Card>
 
-      {/* Coming Soon Notice */}
+      {/* Educational Disclaimer & Coming Soon */}
       <Card className="border-[#222] bg-[#0a0a0a]">
-        <CardContent className="p-8 text-center">
+        <CardContent className="p-8">
           <h2
             className="mb-4 font-mono text-[14px] uppercase"
             style={{ color: "#888", letterSpacing: "0.2em" }}
           >
-            Join the Initiative
+            Educational & Demonstrative Purpose
           </h2>
-          <p className="mb-6 text-[14px]" style={{ color: "#999" }}>
-            CoreText AI is currently in active development. We're building something special
-            for the AI community. More details, documentation, and the full open-source release
-            will be announced soon.
-          </p>
-          <p className="font-mono text-[12px]" style={{ color: "#666" }}>
-            Stay tuned for updates
-          </p>
+
+          <div className="mb-6 rounded bg-[#0f0f0f] border border-[#333] p-4">
+            <h3 className="mb-3 font-mono text-[12px] uppercase text-[#e0e0e0]" style={{ letterSpacing: "0.1em" }}>
+              Important Disclaimer
+            </h3>
+            <p className="mb-4 text-[13px] leading-relaxed" style={{ color: "#b0b0b0" }}>
+              CoreText AI is designed to showcase the power and versatility of AI and data processing technologies.
+              This project is <strong style={{ color: "#e0e0e0" }}>solely for educational and demonstrative purposes</strong>,
+              not for commercial gain or copyright infringement.
+            </p>
+            <p className="mb-4 text-[13px] leading-relaxed" style={{ color: "#b0b0b0" }}>
+              The focus is on demonstrating <strong style={{ color: "#e0e0e0" }}>creativity, design process, technical stack,
+              and proving the value of AI technologies</strong> in making knowledge more accessible and interactive.
+            </p>
+            <p className="text-[13px] leading-relaxed" style={{ color: "#b0b0b0" }}>
+              Any implementation respects copyright laws and fair use principles. This is a proof-of-concept
+              to advance AI education and demonstrate responsible innovation in knowledge accessibility.
+            </p>
+          </div>
+
+          <div className="text-center">
+            <h3
+              className="mb-4 font-mono text-[14px] uppercase"
+              style={{ color: "#888", letterSpacing: "0.2em" }}
+            >
+              Join the Initiative
+            </h3>
+            <p className="mb-6 text-[14px]" style={{ color: "#999" }}>
+              CoreText AI is currently in active development. We're building something special
+              for the AI community. More details, documentation, and the full open-source release
+              will be announced soon.
+            </p>
+            <p className="font-mono text-[12px]" style={{ color: "#666" }}>
+              Stay tuned for updates
+            </p>
+          </div>
         </CardContent>
       </Card>
     </section>
